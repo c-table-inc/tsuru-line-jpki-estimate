@@ -200,8 +200,163 @@
             <div class="slide-number">4</div>
         </div>
 
-        <!-- スライド5: システムの全体像 -->
+        <!-- スライド5: 業務削減インパクト試算（1/2）現状分析 -->
         <div class="slide flex flex-col p-12" data-slide="5">
+            <h2 class="text-4xl font-bold text-gray-800 mb-3">業務削減インパクト試算（1/2）</h2>
+            <h3 class="text-xl text-gray-600 mb-4">都留市の証明書交付実績データに基づく現状分析</h3>
+
+            <!-- 現状データ -->
+            <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-4 rounded-lg mb-4">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">現状データ（年間）</h3>
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="bg-white p-3 rounded-lg shadow text-center">
+                        <p class="text-sm text-gray-600 mb-2">総証明書発行件数</p>
+                        <p class="text-3xl font-bold text-blue-600">36,940件</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-lg shadow text-center">
+                        <p class="text-sm text-gray-600 mb-2">うち一般利用</p>
+                        <p class="text-3xl font-bold text-blue-600">約30,000件</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-lg shadow text-center">
+                        <p class="text-sm text-gray-600 mb-2">コンビニ交付</p>
+                        <p class="text-3xl font-bold text-green-600">6,704件</p>
+                        <p class="text-xs text-gray-600 mt-1">(22%)</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-lg shadow text-center">
+                        <p class="text-sm text-gray-600 mb-2">窓口・郵便局対応</p>
+                        <p class="text-3xl font-bold text-orange-600">23,613件</p>
+                        <p class="text-xs text-gray-600 mt-1">(78%)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 重要ポイント：郵送請求の状況 -->
+            <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 p-3 rounded-lg mb-4">
+                <h3 class="text-lg font-bold text-red-700 mb-2">重要：郵送請求の状況</h3>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-white p-2 rounded-lg shadow">
+                        <p class="text-sm font-semibold text-gray-700 mb-1">本庁の住民票</p>
+                        <p class="text-sm text-gray-600">約<strong class="text-blue-600">1割（約770件/年）</strong>が郵送請求</p>
+                    </div>
+                    <div class="bg-white p-2 rounded-lg shadow">
+                        <p class="text-sm font-semibold text-gray-700 mb-1">本庁の戸籍謄抄本</p>
+                        <p class="text-sm text-gray-600">約<strong class="text-red-600">3割（約2,440件/年）</strong>が郵送請求</p>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-700 mt-2"><strong>→ 戸籍謄抄本は郵送請求が多く、オンライン化により住民の利便性が大幅に向上</strong></p>
+                <p class="text-xs text-gray-600 mt-1">（郵送請求：申請書郵送→処理→証明書返送で数日〜1週間 → オンライン申請：即日処理で翌日〜数日で受取可能）</p>
+            </div>
+
+            <!-- 試算の前提 -->
+            <div class="bg-purple-50 p-4 rounded-lg">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">試算の前提条件</h3>
+                <div class="grid grid-cols-2 gap-5">
+                    <div class="bg-white p-4 rounded shadow-lg">
+                        <p class="font-bold text-purple-700 mb-2 text-xl">オンライン申請率</p>
+                        <p class="text-4xl font-bold text-purple-600 mb-2">50%</p>
+                        <p class="text-sm text-gray-600 mt-2">一般利用約30,000件 × 50% = 約15,000件/年</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-lg">
+                        <p class="font-bold text-purple-700 mb-2 text-xl">削減時間（1件あたり）</p>
+                        <p class="text-4xl font-bold text-purple-600 mb-2">3分</p>
+                        <p class="text-sm text-gray-600 mt-2">窓口対応7分 - 郵送処理4分 = 削減3分</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-number">5</div>
+        </div>
+
+        <!-- スライド6: 業務削減インパクト試算（2/2）削減効果 -->
+        <div class="slide flex flex-col p-12" data-slide="6">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">業務削減インパクト試算（2/2）</h2>
+            <h3 class="text-xl text-gray-600 mb-6">オンライン申請率50%を想定した削減効果（オンライン申請移行件数：約15,000件/年）</h3>
+
+            <div class="grid grid-cols-2 gap-6 mb-5">
+                <!-- 自治体への効果 -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-5 bg-green-100 p-3 rounded-lg">自治体への効果</h3>
+
+                    <div class="space-y-4 text-base">
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-semibold">年間削減時間</span>
+                                <span class="font-bold text-green-700 text-xl">750時間</span>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-1">計算式: 15,000件 × 3分 ÷ 60分 = 750時間</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg flex justify-between items-center">
+                            <span class="font-semibold">1日あたり削減</span>
+                            <span class="font-bold text-green-700 text-xl">3.1時間/日</span>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg flex justify-between items-center">
+                            <span class="font-semibold">年間人件費削減</span>
+                            <span class="font-bold text-green-700 text-xl">188万円</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-green-600 to-green-700 text-white p-5 rounded-lg mt-5 text-center">
+                        <p class="text-base mb-1">投資回収期間</p>
+                        <p class="text-4xl font-bold">約3.9年</p>
+                    </div>
+                </div>
+
+                <!-- 住民への効果 -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-5 bg-blue-100 p-3 rounded-lg">住民への効果</h3>
+
+                    <div class="space-y-4 text-base">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-semibold">住民の時間削減</span>
+                                <span class="font-bold text-blue-700 text-xl">11,244時間/年</span>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-1">計算式: 15,000件 × 45分 ÷ 60分 = 11,244時間</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-semibold">金銭価値換算</span>
+                                <span class="font-bold text-blue-700 text-xl">約1,687万円/年</span>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-1">計算式: 11,244時間 × 1,500円/時 = 16,866,000円</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <p class="text-sm text-gray-700">※1人あたり平均45分の移動・待機時間削減を想定（時給1,500円換算）</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-5 rounded-lg mt-5 text-center">
+                        <p class="text-base mb-1">24時間365日申請可能</p>
+                        <p class="text-2xl font-bold">住民満足度の大幅向上</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5年間の累積効果 -->
+            <div class="bg-gradient-to-r from-purple-100 to-purple-200 p-4 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold text-gray-800 mb-3 text-center">5年間の累積効果</h3>
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-white p-3 rounded-lg shadow text-center">
+                        <p class="text-sm text-gray-600 mb-1">累積削減額</p>
+                        <p class="text-2xl font-bold text-purple-600">940万円</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-lg shadow text-center">
+                        <p class="text-sm text-gray-600 mb-1">システム総費用</p>
+                        <p class="text-2xl font-bold text-gray-700">800万円</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-lg shadow text-center">
+                        <p class="text-sm text-gray-600 mb-1">正味削減額</p>
+                        <p class="text-2xl font-bold text-green-600">+140万円</p>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-600 mt-3 text-center">※初期費用500万円 + 保守費用60万円×5年 = 800万円</p>
+            </div>
+
+            <div class="slide-number">6</div>
+        </div>
+
+        <!-- スライド7: システムの全体像 -->
+        <div class="slide flex flex-col p-12" data-slide="7">
             <h2 class="text-4xl font-bold text-gray-800 mb-6">システムの全体像</h2>
 
             <div class="grid grid-cols-2 gap-6 mb-5">
@@ -293,14 +448,14 @@
                 </div>
             </div>
 
-            <div class="slide-number">5</div>
+            <div class="slide-number">7</div>
         </div>
 
-        <!-- スライド6: 開発の進め方 -->
-        <div class="slide flex flex-col p-16" data-slide="6">
+        <!-- スライド8: 開発の進め方 -->
+        <div class="slide flex flex-col p-16" data-slide="8">
             <h2 class="text-5xl font-bold text-gray-800 mb-10">開発の進め方</h2>
 
-            <h3 class="text-3xl font-semibold text-blue-600 mb-6">開発スケジュール（約3ヶ月）</h3>
+            <h3 class="text-3xl font-semibold text-blue-600 mb-6">開発スケジュール（約4ヶ月）</h3>
 
             <div class="mb-8">
                 <table class="w-full text-left">
@@ -314,23 +469,23 @@
                     <tbody class="text-lg">
                         <tr class="border-b">
                             <td class="p-3 font-semibold">設計</td>
-                            <td class="p-3">2週間</td>
-                            <td class="p-3">11人日</td>
+                            <td class="p-3">3週間</td>
+                            <td class="p-3">18人日</td>
                         </tr>
                         <tr class="border-b">
                             <td class="p-3 font-semibold">開発</td>
-                            <td class="p-3">7週間</td>
-                            <td class="p-3">31人日</td>
+                            <td class="p-3">10週間</td>
+                            <td class="p-3">52人日</td>
                         </tr>
                         <tr class="border-b">
                             <td class="p-3 font-semibold">テスト・導入</td>
-                            <td class="p-3">2週間</td>
-                            <td class="p-3">8人日</td>
+                            <td class="p-3">3週間</td>
+                            <td class="p-3">13人日</td>
                         </tr>
                         <tr class="bg-blue-50 font-bold">
                             <td class="p-3">合計</td>
-                            <td class="p-3">約11週間（3ヶ月）</td>
-                            <td class="p-3">50人日</td>
+                            <td class="p-3">約16週間（4ヶ月）</td>
+                            <td class="p-3">83人日</td>
                         </tr>
                     </tbody>
                 </table>
@@ -338,24 +493,24 @@
 
             <div class="grid grid-cols-3 gap-4">
                 <div class="bg-blue-50 p-3 rounded">
-                    <h4 class="font-bold text-lg mb-2">設計（2週間）</h4>
+                    <h4 class="font-bold text-lg mb-2">設計（3週間）</h4>
                     <p class="text-sm">要件定義、システム設計、画面設計、データベース設計</p>
                 </div>
                 <div class="bg-green-50 p-3 rounded">
-                    <h4 class="font-bold text-lg mb-2">開発（7週間）</h4>
+                    <h4 class="font-bold text-lg mb-2">開発（10週間）</h4>
                     <p class="text-sm">Laravel基盤、LIFF、API（JPKI・GMO PAYMENT連携）、管理画面</p>
                 </div>
                 <div class="bg-purple-50 p-3 rounded">
-                    <h4 class="font-bold text-lg mb-2">テスト・導入（2週間）</h4>
+                    <h4 class="font-bold text-lg mb-2">テスト・導入（3週間）</h4>
                     <p class="text-sm">システムテスト、受入テスト、デプロイ、研修</p>
                 </div>
             </div>
 
-            <div class="slide-number">6</div>
+            <div class="slide-number">8</div>
         </div>
 
-        <!-- スライド7: 期待される効果 -->
-        <div class="slide flex flex-col p-16" data-slide="7">
+        <!-- スライド9: 期待される効果 -->
+        <div class="slide flex flex-col p-16" data-slide="9">
             <h2 class="text-5xl font-bold text-gray-800 mb-10">期待される効果</h2>
 
             <div class="grid grid-cols-2 gap-6">
@@ -380,11 +535,11 @@
                 </div>
             </div>
 
-            <div class="slide-number">7</div>
+            <div class="slide-number">9</div>
         </div>
 
-        <!-- スライド8: 費用 -->
-        <div class="slide flex flex-col p-16" data-slide="8">
+        <!-- スライド10: 費用 -->
+        <div class="slide flex flex-col p-16" data-slide="10">
             <h2 class="text-5xl font-bold text-gray-800 mb-10">費用</h2>
 
             <div class="grid grid-cols-2 gap-8">
@@ -393,19 +548,19 @@
                     <h3 class="text-2xl font-semibold text-gray-800 mb-4">初期開発費用（一括）</h3>
                     <table class="w-full text-left text-sm">
                         <tbody>
-                            <tr class="border-b"><td class="p-2">要件定義・設計</td><td class="p-2 text-right">67万円</td></tr>
-                            <tr class="border-b"><td class="p-2">Laravel基盤構築</td><td class="p-2 text-right">20万円</td></tr>
-                            <tr class="border-b"><td class="p-2">LIFF開発</td><td class="p-2 text-right">39万円</td></tr>
-                            <tr class="border-b"><td class="p-2">バックエンドAPI開発</td><td class="p-2 text-right">67万円</td></tr>
-                            <tr class="border-b"><td class="p-2">Laravel-admin構築</td><td class="p-2 text-right">28万円</td></tr>
-                            <tr class="border-b"><td class="p-2">インフラ構築・デプロイ</td><td class="p-2 text-right">17万円</td></tr>
-                            <tr class="border-b"><td class="p-2">テスト</td><td class="p-2 text-right">28万円</td></tr>
-                            <tr class="border-b"><td class="p-2">導入支援・研修</td><td class="p-2 text-right">22万円</td></tr>
-                            <tr class="border-b"><td class="p-2">プロジェクト管理</td><td class="p-2 text-right">12万円</td></tr>
-                            <tr class="bg-blue-100 font-bold"><td class="p-2">合計</td><td class="p-2 text-right">300万円</td></tr>
+                            <tr class="border-b"><td class="p-2">要件定義・設計</td><td class="p-2 text-right">108万円</td></tr>
+                            <tr class="border-b"><td class="p-2">Laravel基盤構築</td><td class="p-2 text-right">33万円</td></tr>
+                            <tr class="border-b"><td class="p-2">LIFF開発</td><td class="p-2 text-right">66万円</td></tr>
+                            <tr class="border-b"><td class="p-2">バックエンドAPI開発</td><td class="p-2 text-right">112万円</td></tr>
+                            <tr class="border-b"><td class="p-2">Laravel-admin構築</td><td class="p-2 text-right">47万円</td></tr>
+                            <tr class="border-b"><td class="p-2">インフラ構築・デプロイ</td><td class="p-2 text-right">28万円</td></tr>
+                            <tr class="border-b"><td class="p-2">テスト</td><td class="p-2 text-right">47万円</td></tr>
+                            <tr class="border-b"><td class="p-2">導入支援・研修</td><td class="p-2 text-right">37万円</td></tr>
+                            <tr class="border-b"><td class="p-2">プロジェクト管理</td><td class="p-2 text-right">22万円</td></tr>
+                            <tr class="bg-blue-100 font-bold"><td class="p-2">合計</td><td class="p-2 text-right">500万円</td></tr>
                         </tbody>
                     </table>
-                    <p class="text-sm text-gray-600 mt-2">総工数: 50人日</p>
+                    <p class="text-sm text-gray-600 mt-2">総工数: 83人日</p>
                 </div>
 
                 <!-- 保守運用費 -->
@@ -427,15 +582,15 @@
             </div>
 
             <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-6 rounded-lg mt-6 text-center">
-                <h3 class="text-3xl font-bold">初年度総額: 360万円（税抜）</h3>
-                <p class="text-xl mt-2">初期費用 300万円 + 年額保守 60万円</p>
+                <h3 class="text-3xl font-bold">初年度総額: 560万円（税抜）</h3>
+                <p class="text-xl mt-2">初期費用 500万円 + 年額保守 60万円</p>
             </div>
 
-            <div class="slide-number">8</div>
+            <div class="slide-number">10</div>
         </div>
 
-        <!-- スライド9: C-tableの強み -->
-        <div class="slide flex flex-col p-16" data-slide="9">
+        <!-- スライド11: C-tableの強み -->
+        <div class="slide flex flex-col p-16" data-slide="11">
             <h2 class="text-5xl font-bold text-gray-800 mb-10">C-tableの強み</h2>
 
             <div class="space-y-8">
@@ -461,11 +616,11 @@
                 </div>
             </div>
 
-            <div class="slide-number">9</div>
+            <div class="slide-number">11</div>
         </div>
 
-        <!-- スライド10: 次のステップ・お問い合わせ -->
-        <div class="slide flex flex-col justify-center items-center p-16" data-slide="10">
+        <!-- スライド12: 次のステップ・お問い合わせ -->
+        <div class="slide flex flex-col justify-center items-center p-16" data-slide="12">
             <div class="text-center mb-12">
                 <h2 class="text-5xl font-bold text-gray-800 mb-6">ご清聴ありがとうございました</h2>
                 <p class="text-2xl text-gray-600">都留市様の住民サービス向上を全力でサポートいたします</p>
@@ -493,7 +648,7 @@
                 <p class="text-center text-xl text-gray-600 mt-8">まずはお気軽にご相談ください</p>
             </div>
 
-            <div class="slide-number">10</div>
+            <div class="slide-number">12</div>
         </div>
     </div>
 
